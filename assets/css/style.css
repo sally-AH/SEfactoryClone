@@ -154,3 +154,74 @@
     font-weight: 800;
     text-decoration: none;
 }
+/* -------------------------------------------------------- */
+
+.hello-world {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F2F3;
+}
+
+.hello-world .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 865px;
+    padding: 70px 0;
+}
+
+.hello-world div {
+    color: #282828;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.hello-world div span {
+    color: #28eea7;
+    font-weight: 900;
+}
+
+.hello-world .circles {
+    display: flex;
+    gap: 0 5px;
+}
+
+.hello-world .circles div {
+    text-align: center;
+    font-size: 1px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.hello-world .circles .black {
+    background-color:#282828 ;
+}
+
+.hello-world .circles .grey {
+    background-color: #dcdee1;
+    color: #dcdee1;
+}
+
+.hello-world .circles .green {
+    background-color: #28eea7;
+    color: #28eea7;
+}
+
+.hello-world .video-container {
+    background-color: #28eea7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.hello-world .video-container iframe {
+    height: 95%;
+    width: 97%;
+}
