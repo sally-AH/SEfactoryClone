@@ -80,7 +80,7 @@
     text-transform: uppercase;
     white-space: nowrap;
     background-color: #282828;
-    padding: 15px 20px;
+    padding: 12px 15px;
     font-weight: 800;
     text-decoration: none;
 }
@@ -150,14 +150,14 @@
     text-transform: uppercase;
     white-space: nowrap;
     background-color: #fcfcfd;
-    padding: 15px 20px;
+    padding: 12px 15px;
     font-weight: 800;
     text-decoration: none;
 }
 /* -------------------------------------------------------- */
 
 .hello-world {
-    height: 110vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,7 +216,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 70%;
     width: 90%;
     border-radius: 20px;
 }
@@ -224,4 +224,119 @@
 .hello-world .video-container iframe {
     height: 95%;
     width: 97%;
+}
+
+/* ------------------------------------------------ */
+
+.milestones {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.milestones .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 865px;
+    padding: 70px 0;
+}
+.milestones div{
+    color: #282828;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.milestones div span{
+    color: #28eea7;
+    font-weight: 900;
+}
+.milestones .circles {
+    display: flex;
+    gap: 0 5px;
+}
+.milestones .circles div {
+    text-align: center;
+    font-size: 1px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.milestones .circles .black {
+    background-color: #282828;
+}
+
+.milestones .circles .grey {
+    background-color: #dcdee1;
+    color: #dcdee1;
+}
+.milestones .circles .green {
+    background-color: #28eea7;
+    color: #28eea7;
+}  
+
+.milestones .cards-container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    gap: 20px;
+}
+
+.milestones .cards-container .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 50px 0px 50px 50px;
+    height: 100%;
+}
+.milestones .cards-container .left .milestone-title {
+    font-size: 100px;
+}
+.milestones .cards-container .left .milestone-percentage{
+    font-size: 30px;
+    padding: 0px;
+    font-weight: bold;
+}
+.milestones .cards-container .left .rich-text-content-tab p{
+    font-size: 15px;
+    font-weight: 10;
+    color: #282828;
+}
+.milestones .cards-container .left .rich-text-content-tab p strong {
+    color: #282828;
+}
+.milestones .cards-container .right {
+    flex: 1; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    height: 100%;
+}
+.milestones .cards-container .right .right-up-one,
+    .right-up-two,
+    .right-bottom-one,
+    .right-bottom-two {
+        border-radius: 20px;
+        padding: 20px;
+        background-color: #f2f2f2;
+        margin: 5px;
+        padding: 25px;
+}
+
+.milestones .milestone-title{
+    font-size: 60px;
+    line-height: 100px;
+}
+.milestones .milestone-percentage{
+    font-size: 20px;
+    font-weight: 10;
 }
