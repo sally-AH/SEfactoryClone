@@ -9,23 +9,23 @@
     font-family: Noto Sans Mono, sans-serif;
 }
 
-.header {
+.header{
     height: 100vh;
     min-height: 100%;
     position: relative;
     display: flex;
 }
 
-.header .left {
+.header .header-left {
     background-color: #28eea7;
     background-image: url(/assets/images/641b4c900878f534cf0d3f17_Untitled\ design\ \(11\).png);
     background-size: cover;
     position: relative;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
-
-.header .left .cover {
+.header .header-left .cover {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -34,68 +34,70 @@
     position: static;
 }
 
-.header .left .cover .logo {
+.header .header-left .cover .logo {
     align-self: flex-start;
     margin-top: 70px;
     margin-left: 70px;
     width: 187px;
 }
 
-.header .left .cover .content {
+.header .header-left .cover .content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding-top: 100px;
     padding-bottom: 60px;
-    margin-right: 40px;
+    margin-right: 70px;
 }
 
-.header .left .cover .content h2 span {
+.header .header-left .cover .content h2 span {
     background-color: #282828;
-    padding: 5px;
+/* 0000000000000000000000000000000000000 */
+    padding: 5px 10px;
     font-size: 20px;
-    line-height: 2;
-    word-spacing: 3px;
+    font-weight: bolder;
+    line-height: 2.5;
 }
-
-.header .left .cover .content h1 {
+.header .header-left .cover .content h1 {
     color: #282828;
     margin-top: 10px;
-    font-weight: 1000;
+/* 0000000000000000000000000000000000000 */
+    font-weight:900;
 }
-
-.header .left .cover .content p {
+.header .header-left .cover .content p {
     color: #282828;
-    font-size: 20px;
+    font-size: 15px;
+/* 000000000000000000000000000000000000 */
     width: 85%;
     text-align: right;
     margin-top: 30px;
     margin-bottom: 10px;
-    line-height: 1.3;
+    line-height: 1.5;
 }
-
-.header .left .cover .content .get-trained {
+.header .header-left .cover .content .get-trained {
     color: #fcfcfd;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
     background-color: #282828;
-    padding: 12px 15px;
+/* 0000000000000000000000000000000000000 */
+    padding: 12px 16px;
     font-weight: 800;
     text-decoration: none;
-}
-/* --------------------- */
 
-.header .right {
+}
+/* ---------- */
+.header .header-right {
     background-color: #282828;
-    background-image: url(/assets/images/641b4d48dc5b31ff0aa4ca67_Untitled\ design\ \(12\).png);
+    background-image: url(/assets/images/641b4d48dc5b31ff0aa4ca67_Untitled\ design\ \(12\)\ \(1\).png);
     background-size: cover;
     position: relative;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.header .right .cover {
+.header .header-right .cover {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -104,57 +106,60 @@
     position: static;
 }
 
-.header .right .cover .logo {
-    align-self: flex-end;
+.header .header-right .cover .logo {
+    align-self:flex-end;
     margin-top: 70px;
     margin-right: 70px;
     width: 50px;
 }
 
-.header .right .cover .content {
+.header .header-right .cover .content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 100px;
     padding-bottom: 60px;
-    margin-left: 40px;
+    margin-left: 70px;
 }
 
-.header .right .cover .content h2 span {
+.header .header-right .cover .content h2 span {
     color: #363738;
     background-color: #fcfcfd;
-    padding: 5px;
+/* 0000000000000000000000000000000000 */
+    padding: 5px 10px;
     font-size: 20px;
-    line-height: 2;
-    word-spacing: 3px;
+    font-weight: bolder;
+    line-height: 2.5;
 }
-
-.header .right .cover .content h1 {
+.header .header-right .cover .content h1 {
     color: #fcfcfd;
     margin-top: 10px;
+/* 00000000000000000000000000000000000 */
+    font-weight:900;
 }
 
-.header .right .cover .content p {
+.header .header-right .cover .content p {
     color: #fcfcfd;
-    font-size: 20px;
-    width: 80%;
+    font-size: 15px;
+    width: 85%;
     text-align: left;
     margin-top: 30px;
     margin-bottom: 10px;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
-.header .right .cover .content .hire-talent {
+.header .header-right .cover .content .hire-talent {
     color: #282828;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
     background-color: #fcfcfd;
-    padding: 12px 15px;
+    padding: 12px 16px;
     font-weight: 800;
     text-decoration: none;
+
 }
-/* -------------------------------------------------------- */
+/* ----------------------------- */
 
 .hello-world {
     height: 150vh;
@@ -163,33 +168,30 @@
     justify-content: center;
     align-items: center;
     background-color: #F1F2F3;
-}
 
-.hello-world .head {
+}
+.hello-world .hello-world-head {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0 865px;
-    padding: 70px 0;
+    margin: 70px 0;
 }
-
-.hello-world div {
+.hello-world div{
     color: #282828;
     font-weight: 800;
     font-size: 25px;
 }
 
-.hello-world div span {
+.hello-world div span{
     color: #28eea7;
     font-weight: 900;
 }
-
-.hello-world .circles {
+.hello-world .hello-world-circles {
     display: flex;
     gap: 0 5px;
 }
-
-.hello-world .circles div {
+.hello-world .hello-world-circles div {
     text-align: center;
     font-size: 1px;
     height: 25px;
@@ -197,20 +199,18 @@
     border-radius: 50%;
 }
 
-.hello-world .circles .black {
-    background-color:#282828 ;
+.hello-world .hello-world-circles .black {
+    background-color: #282828;
 }
 
-.hello-world .circles .grey {
+.hello-world .hello-world-circles .grey {
     background-color: #dcdee1;
     color: #dcdee1;
 }
-
-.hello-world .circles .green {
+.hello-world .hello-world-circles .green {
     background-color: #28eea7;
     color: #28eea7;
 }
-
 .hello-world .video-container {
     background-color: #28eea7;
     display: flex;
@@ -225,8 +225,7 @@
     height: 95%;
     width: 97%;
 }
-
-/* ------------------------------------------------ */
+/* ---------------------------------------------- */
 
 .milestones {
     height: 100vh;
@@ -236,7 +235,7 @@
     align-items: center;
     background-color: white;
 }
-.milestones .head {
+.milestones .milestones-head {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,11 +252,11 @@
     color: #28eea7;
     font-weight: 900;
 }
-.milestones .circles {
+.milestones .milestones-circles {
     display: flex;
     gap: 0 5px;
 }
-.milestones .circles div {
+.milestones .milestones-circles div {
     text-align: center;
     font-size: 1px;
     height: 25px;
@@ -265,15 +264,15 @@
     border-radius: 50%;
 }
 
-.milestones .circles .black {
+.milestones .milestones-circles .black {
     background-color: #282828;
 }
 
-.milestones .circles .grey {
+.milestones .milestones-circles .grey {
     background-color: #dcdee1;
     color: #dcdee1;
 }
-.milestones .circles .green {
+.milestones .milestones-circles .green {
     background-color: #28eea7;
     color: #28eea7;
 }  
@@ -286,7 +285,7 @@
     gap: 20px;
 }
 
-.milestones .cards-container .left {
+.milestones .cards-container .cards-container-left {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -297,23 +296,26 @@
     padding: 50px 0px 50px 50px;
     height: 100%;
 }
-.milestones .cards-container .left .milestone-title {
+.milestones .cards-container .cards-container-left .milestone-title {
     font-size: 100px;
+
 }
-.milestones .cards-container .left .milestone-percentage{
+.milestones .cards-container .cards-container-left .milestone-percentage{
     font-size: 30px;
     padding: 0px;
     font-weight: bold;
+/* 00000000000000000000000000000000 */
+    width: 70%;
 }
-.milestones .cards-container .left .rich-text-content-tab p{
+.milestones .cards-container .cards-container-left .rich-text-content-tab p{
     font-size: 15px;
     font-weight: 10;
     color: #282828;
 }
-.milestones .cards-container .left .rich-text-content-tab p strong {
+.milestones .cards-container .cards-container-left .rich-text-content-tab p strong {
     color: #282828;
 }
-.milestones .cards-container .right {
+.milestones .cards-container .cards-container-right {
     flex: 1; 
     display: flex;
     flex-direction: row;
@@ -321,22 +323,170 @@
     border-radius: 20px;
     height: 100%;
 }
-.milestones .cards-container .right .right-up-one,
+.milestones .cards-container .cards-container-right .right-up-one,
     .right-up-two,
     .right-bottom-one,
     .right-bottom-two {
         border-radius: 20px;
-        padding: 20px;
         background-color: #f2f2f2;
-        margin: 5px;
-        padding: 25px;
+        margin: 6px;
+        padding: 25px; 
 }
 
 .milestones .milestone-title{
     font-size: 60px;
     line-height: 100px;
+    font-weight: 900;
 }
 .milestones .milestone-percentage{
-    font-size: 20px;
+/* 00000000000000000000000000000000000000000000 */
+    font-size: 16px;
     font-weight: 10;
+}
+/* ---------------------------------------------------- */
+
+.Programs {
+    margin-top: 50px;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #28eea7;
+    color: #282828;
+}
+
+.Programs .Programs-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 865px;
+    margin-bottom: 70px;
+
+}
+.Programs .Programs-head .programs-header{
+    background-color: #282828;
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+
+.Programs div span{
+    color: #28eea7;
+    font-weight: 900;
+
+}
+.Programs .Programs-header-circles {
+    display: flex;
+    gap: 0 5px;
+}
+.Programs .Programs-header-circles div {
+    text-align: center;
+    font-size: 1px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+.Programs .Programs-header-circles .black {
+    background-color: #282828;
+}
+
+.Programs .Programs-header-circles .grey {
+    background-color: #dcdee1;
+    color: #dcdee1;
+}
+.Programs .Programs-header-circles .white {
+    background-color: white;
+    color:white;
+}  
+
+.Programs .tab-menu {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    margin-left: 130px;
+    gap: 0 5px;
+
+}
+.Programs .tab-menu a {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: #282828;
+    font-weight: bolder;
+}
+.Programs .tab-menu a:hover{
+    color: #dcdee1;
+    background-color: #363738;
+    border-radius: 20px 20px 0 0;
+}
+
+.Programs .program-card {
+    display: flex;
+    width: 90%;
+    height: 50%;
+    background-color: #363738;
+    border-radius: 20px;
+}
+
+.Programs .program-card .program-card-left{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 20px;
+
+}
+
+.Programs .program-card .program-card-left .program-card-head {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Programs .program-card .program-card-left .program-card-head strong {
+    color: #28eea7;
+}
+
+.Programs .program-card .program-card-left .content {
+    font-size: 13px;
+}
+
+.Programs .program-card .program-card-right {
+    width: 30%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.Programs .program-card .program-card-right .cards-img-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.Programs .program-card .program-card-right img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.Programs .program-card .program-card-left .footer {
+    display: flex;
+    gap: 10px;
+}
+.Programs .program-card .program-card-left .footer div{
+    background-color: #282828;
+    font-size: 13px;
+    line-height: 40px;
+    padding: 5px 20px;
+}
+.Programs .program-card .program-card-left .footer .learn-more {
+    width: 250px;
+    text-align: end;
+}
+.Programs .program-card .program-card-left .footer div strong {
+    color: #28eea7;
 }
