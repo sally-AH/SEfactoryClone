@@ -955,3 +955,45 @@
     width: 100px;
     height: 100px;
 }
+
+/* ---------------------------------------------------------------- */
+
+.subsciption {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 600px;
+    color: #dcdee1;
+    background-color: #363738;
+}
+
+.subsciption  p {
+    font-size: 23px;
+}
+.subsciption p span {
+    color: #28eea7;
+    font-weight: 900;
+}
+
+.subsciption .text {
+    font-size: 13px;
+}
+.subsciption .email {
+    display: flex;
+}
+
+.subsciption div input {
+    height: 50px;
+    padding-left: 15px;
+}
+
+.subsciption .email input[type="text"]::placeholder {
+    color: #a8a8a8;
+}
+
+.subsciption .email input[type="button"] {
+    background-color: #282828;
+    padding: 10px;
+}
