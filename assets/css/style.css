@@ -959,7 +959,7 @@
 /* ---------------------------------------------------------------- */
 
 .contact-us {
-    height: 130vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1074,14 +1074,15 @@
 .contact-us .content-container .contact-us-form .contact-us-form-content .contact-us-form-head {
     color: #a8a8a8;
     font-size: 15px;
+    margin-top: 25px;
 }
 .contact-us .content-container .contact-us-form .contact-us-form-content span {
     font-size: 20px;
 }
-
 .form-container {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
   
 .form-row {
@@ -1095,7 +1096,7 @@
 }
   
 label {
-    font-weight: bold;
+    font-size: 12px;
     margin: 0 20px 0 10px;
 }
   
@@ -1105,6 +1106,11 @@ textarea {
     height: 40px;
     padding: 5px;
     border: 1px solid #ccc;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
 }
   
 button {
